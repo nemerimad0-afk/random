@@ -1,0 +1,8 @@
+{
+  "name": "Remix منظومة السحب الذكي | الكلية الذكية وجوال",
+  "description": "برنامج السحب العشوائي الرقمي المشترك بين الكلية الذكية الجامعية وشركة جوال - نبني المستقبل بذكاء",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

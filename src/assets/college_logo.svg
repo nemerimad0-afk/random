@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 70 260 260" width="100%" height="100%">
+  <defs>
+    <!-- Cyan Blue gradient / tone for University rings & main title -->
+    <linearGradient id="collegeCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00A0E3"/>
+      <stop offset="100%" stopColor="#0077B6"/>
+    </linearGradient>
+    
+    <!-- Smart Tech Green for circuit lines & book -->
+    <linearGradient id="collegeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00A859"/>
+      <stop offset="100%" stopColor="#007A3D"/>
+    </linearGradient>
+
+    <!-- Top curved path for the arched text -->
+    <path id="archTextPath" d="M 148 184 A 122 122 0 0 1 352 184" fill="none" />
+  </defs>
+
+  <!-- Group: Main Emblem -->
+  <g id="sume-emblem">
+    <!-- Top Arched Arabic Text: الكلية الذكية الجامعية -->
+    <text font-family="'Cairo', 'Tajawal', sans-serif" font-size="20.5" font-weight="900" fill="#00873E" letter-spacing="1">
+      <textPath href="#archTextPath" startOffset="50%" text-anchor="middle">
+        الكلية الذكية الجامعية
+      </textPath>
+    </text>
+
+    <!-- Concentric Cyan Blue Technology Rings -->
+    <!-- Outer Ring -->
+    <circle cx="250" cy="195" r="95" fill="none" stroke="#007AA6" stroke-width="4.5" />
+    <!-- Middle Gap Ring -->
+    <circle cx="250" cy="195" r="86" fill="none" stroke="#007AA6" stroke-width="2.8" opacity="0.9" />
+    <!-- Inner Strong Ring -->
+    <circle cx="250" cy="195" r="77" fill="none" stroke="#007AA6" stroke-width="4" />
+
+    <!-- Citadel Fortress & Digital Neural Circuit (The Hebron Citadel Wall Shape) -->
+    <!-- Citadel Contour in Tech Green -->
+    <path d="M 204 212 
+             L 204 172 
+             L 218 172 
+             L 218 162 
+             L 232 162 
+             L 232 172 
+             L 242 155 
+             L 250 145 
+             L 258 155 
+             L 268 172 
+             L 268 162 
+             L 282 162 
+             L 282 172 
+             L 296 172 
+             L 296 212" 
+          fill="none" 
+          stroke="#00873E" 
+          stroke-width="5" 
+          stroke-linejoin="round" 
+          stroke-linecap="round" />
+
+    <!-- Digital PCB Circuits / Vertical Circuit Nodes inside Fortress -->
+    <!-- Center Line 1 (Tallest) -->
+    <line x1="250" y1="162" x2="250" y2="234" stroke="#00873E" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="250" cy="160" r="5" fill="#00873E" />
+    <circle cx="250" cy="236" r="5" fill="#00873E" />
+
+    <!-- Line 2 Left -->
+    <line x1="236" y1="172" x2="236" y2="228" stroke="#00873E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="236" cy="170" r="4.8" fill="#00873E" />
+    <circle cx="236" cy="230" r="4.8" fill="#00873E" />
+
+    <!-- Line 2 Right -->
+    <line x1="264" y1="172" x2="264" y2="228" stroke="#00873E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="264" cy="170" r="4.8" fill="#00873E" />
+    <circle cx="264" cy="230" r="4.8" fill="#00873E" />
+
+    <!-- Line 3 Left Outer -->
+    <line x1="223" y1="184" x2="223" y2="222" stroke="#00873E" stroke-width="3.8" stroke-linecap="round"/>
+    <circle cx="223" cy="182" r="4.5" fill="#00873E" />
+    <circle cx="223" cy="224" r="4.5" fill="#00873E" />
+
+    <!-- Line 3 Right Outer -->
+    <line x1="277" y1="184" x2="277" y2="222" stroke="#00873E" stroke-width="3.8" stroke-linecap="round"/>
+    <circle cx="277" cy="182" r="4.5" fill="#00873E" />
+    <circle cx="277" cy="224" r="4.5" fill="#00873E" />
+
+    <!-- Line 4 Far Left -->
+    <line x1="212" y1="196" x2="212" y2="220" stroke="#00873E" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="212" cy="194" r="4" fill="#00873E" />
+    <circle cx="212" cy="221" r="4" fill="#00873E" />
+
+    <!-- Line 4 Far Right -->
+    <line x1="288" y1="196" x2="288" y2="220" stroke="#00873E" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="288" cy="194" r="4" fill="#00873E" />
+    <circle cx="288" cy="221" r="4" fill="#00873E" />
+
+    <!-- Open Book of Knowledge in Emerald Green (Aerodynamic Wings / Pages) -->
+    <!-- Left Top Page Wing -->
+    <path d="M 246 284 C 218 276 182 264 150 244 C 182 260 218 268 246 270 Z" 
+          fill="#00873E" />
+    <!-- Left Main Curved Wing -->
+    <path d="M 246 286 C 215 278 176 260 154 258 C 180 272 214 286 246 290 Z" 
+          fill="#00873E" />
+    <!-- Left Lower Page Wing -->
+    <path d="M 246 296 C 210 290 178 280 158 272 C 172 286 210 302 246 308 Z" 
+          fill="#00873E" />
+
+    <!-- Right Top Page Wing -->
+    <path d="M 254 284 C 282 276 318 264 350 244 C 318 260 282 268 254 270 Z" 
+          fill="#00873E" />
+    <!-- Right Main Curved Wing -->
+    <path d="M 254 286 C 285 278 324 260 346 258 C 320 272 286 286 254 290 Z" 
+          fill="#00873E" />
+    <!-- Right Lower Page Wing -->
+    <path d="M 254 296 C 290 290 322 280 342 272 C 328 286 290 302 254 308 Z" 
+          fill="#00873E" />
+  </g>
+</svg>

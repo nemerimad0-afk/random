@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FFF3BF 0%, #F5C042 30%, #E5A93C 55%, #BF8415 80%, #FFF3BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-gradient-bg {
+    background: linear-gradient(135deg, #FFE894 0%, #F5BE38 30%, #D49013 70%, #FDD768 100%);
+  }
+
+  .gold-gradient-border {
+    border-image: linear-gradient(135deg, #FAD02C, #F3B008, #946909, #FAD02C) 1;
+  }
+
+  .navy-glass {
+    background: rgba(11, 23, 50, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(229, 169, 60, 0.22);
+  }
+
+  .navy-card-glow {
+    box-shadow: 0 0 35px -5px rgba(229, 169, 60, 0.15), 0 20px 25px -5px rgba(3, 7, 18, 0.5);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 25px rgba(245, 190, 56, 0.4);
+  }
+}
+
+/* Custom glowing pulse keyframe */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Rolling digit perspective */
+.digit-slot {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+}
+
