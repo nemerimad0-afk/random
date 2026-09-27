@@ -159,9 +159,18 @@ export const Header: React.FC<HeaderProps> = ({
                     </button>
                   )}
                 </div>
+                {collegeLogoSrc && (
+                  <div className="mb-3 flex items-center justify-center p-2.5 bg-[#060B18] rounded-xl border border-[#E5A93C]/30 shadow-inner">
+                    <img
+                      src={collegeLogoSrc}
+                      alt="معاينة شعار الكلية المرفوع"
+                      className="h-16 w-auto max-w-[140px] object-contain rounded-lg"
+                    />
+                  </div>
+                )}
                 <label className="flex items-center justify-center gap-2 w-full p-3 border-2 border-dashed border-[#E5A93C]/30 hover:border-[#E5A93C] rounded-lg cursor-pointer transition-colors bg-[#0B1530]/50 text-slate-300 text-xs">
                   <Upload className="w-4 h-4 text-[#E5A93C]" />
-                  <span>رفع صورة جديدة للكلية (PNG, JPG, SVG)</span>
+                  <span>{collegeLogoSrc ? 'استبدال صورة شعار الكلية' : 'رفع صورة جديدة للكلية (PNG, JPG, SVG)'}</span>
                   <input
                     type="file"
                     accept="image/*"
@@ -185,9 +194,18 @@ export const Header: React.FC<HeaderProps> = ({
                     </button>
                   )}
                 </div>
+                {jawwalLogoSrc && (
+                  <div className="mb-3 flex items-center justify-center p-2.5 bg-[#060B18] rounded-xl border border-[#FF6600]/30 shadow-inner">
+                    <img
+                      src={jawwalLogoSrc}
+                      alt="معاينة شعار جوال المرفوع"
+                      className="h-16 w-auto max-w-[140px] object-contain rounded-lg"
+                    />
+                  </div>
+                )}
                 <label className="flex items-center justify-center gap-2 w-full p-3 border-2 border-dashed border-[#FF6600]/30 hover:border-[#FF6600] rounded-lg cursor-pointer transition-colors bg-[#0B1530]/50 text-slate-300 text-xs">
                   <Upload className="w-4 h-4 text-[#FF6600]" />
-                  <span>رفع صورة جديدة لشركة جوال (PNG, JPG, SVG)</span>
+                  <span>{jawwalLogoSrc ? 'استبدال صورة شعار جوال' : 'رفع صورة جديدة لشركة جوال (PNG, JPG, SVG)'}</span>
                   <input
                     type="file"
                     accept="image/*"

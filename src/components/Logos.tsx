@@ -28,23 +28,16 @@ export const CollegeLogo: React.FC<LogoProps> = ({
 
   if (customSrc) {
     return (
-      <div className={`flex items-center gap-3 select-none ${className}`}>
+      <div className={`flex items-center justify-center select-none ${className}`}>
         <img
           src={customSrc}
-          alt="الكلية الذكية الجامعية"
-          className={`object-contain rounded-xl shadow-md ${sizeClasses}`}
-          style={{ width: '80px', height: '80px' }}
+          alt="شعار الكلية الذكية الجامعية"
+          className="object-contain rounded-xl shadow-md max-h-[80px] max-w-[140px] w-auto h-auto transition-transform hover:scale-105"
+          style={{
+            maxHeight: size === 'sm' ? '40px' : size === 'md' ? '56px' : '80px',
+            height: size === '80' || size === 'xl' ? '80px' : undefined,
+          }}
         />
-        {!hideText && (
-          <div className="flex flex-col text-right">
-            <span className="text-[15px] sm:text-base font-extrabold tracking-tight text-white leading-tight">
-              الكلية الذكية الجامعية
-            </span>
-            <span className="text-[11px] sm:text-xs text-[#E5A93C] font-semibold leading-tight mt-0.5">
-              للتعليم الحديث · فلسطين
-            </span>
-          </div>
-        )}
       </div>
     );
   }
@@ -169,23 +162,16 @@ export const JawwalLogo: React.FC<LogoProps> = ({
 
   if (customSrc) {
     return (
-      <div className={`flex items-center gap-2.5 select-none ${className}`}>
+      <div className={`flex items-center justify-center select-none ${className}`}>
         <img
           src={customSrc}
-          alt="شركة جوال"
-          className={`object-contain rounded-xl shadow-md ${sizeClasses}`}
-          style={{ width: '80px', height: '80px' }}
+          alt="شعار شركة جوال"
+          className="object-contain rounded-xl shadow-md max-h-[80px] max-w-[140px] w-auto h-auto transition-transform hover:scale-105"
+          style={{
+            maxHeight: size === 'sm' ? '40px' : size === 'md' ? '56px' : '80px',
+            height: size === '80' || size === 'xl' ? '80px' : undefined,
+          }}
         />
-        {!hideText && (
-          <div className="flex flex-col text-right">
-            <span className="text-lg sm:text-xl font-black tracking-tight text-white leading-tight font-['Tajawal',sans-serif]">
-              جَــوّال
-            </span>
-            <span className="text-[11px] text-slate-300 font-medium leading-tight">
-              شركة الاتصالات الخلوية
-            </span>
-          </div>
-        )}
       </div>
     );
   }
